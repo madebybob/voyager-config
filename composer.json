@@ -7,6 +7,10 @@
         {
             "name": "Bob Mulder",
             "email": "info@madebybob.nl"
+        },
+        {
+            "name": "Marlo Corridor",
+            "email": "corridor.marlo@sofcode.xyz"
         }
     ],
     "minimum-stability": "dev",
