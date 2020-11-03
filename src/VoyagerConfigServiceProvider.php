@@ -5,6 +5,7 @@ namespace MadeByBob\VoyagerConfig;
 use Illuminate\Support\ServiceProvider;
 use MadeByBob\VoyagerConfig\Console\Commands\VoyagerExportCommand;
 use MadeByBob\VoyagerConfig\Console\Commands\VoyagerClearCommand;
+use MadeByBob\VoyagerConfig\Console\Commands\VoyagerImportCommand;
 use Illuminate\Support\Facades\Config;
 
 class VoyagerConfigServiceProvider extends ServiceProvider
@@ -34,7 +35,8 @@ class VoyagerConfigServiceProvider extends ServiceProvider
     if ($this->app->runningInConsole()) {
       $this->commands([
           VoyagerExportCommand::class,
-          VoyagerClearCommand::class
+          VoyagerClearCommand::class,
+          VoyagerImportCommand::class
       ]);
     }
   }
